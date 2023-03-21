@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ficha de cadastro de candidato</h1>
+
+<form method="post" action= "#">
+
+<fieldset> 
+<legend> Informações Pessoais</legend>
+<label for="Nome"> Nome: </label> 
+<input type="text" name="nome" id="nome"> <br>
+<label for="Sobrenome">Sobrenome:</label> 
+<input type="text" name="Sobrenome" id="Sobrenome"> <br>
+<label for="Estadocivil"> Estado civil:</label>
+<input type="text" name:="estadocivil" id="estadocivil"><br>
+<label for="naturalidade"> Naturalidade: </label>
+<input type="text" name="naturalidade" id="naturalidade"><br>
+<label for="nascimento">Data de nascimento:</label>
+<input type="date" name="nascimento" id="nascimento">
+<label for="idade">Idade:</label>
+<input type="number" name="idade" id="idade" min="18" max="65"> <br>
+<label for="sexo">Sexo:</label>
+<label for="sexo">Feminino</label>
+<input type="radio" name="sexo" id="sexo" value="Feminino">
+<label for="sexo">Masculino</label>
+<input type="radio" name="sexo" id="sexo" value="Masculino">
+<label for="sexo">Indiferente</label>
+<input type="radio" name="sexo" id="sexo" value="Indiferente"><br>
+</fieldset>
+
+<fieldset> 
+<legend>Informações de contacto</legend>
+<label for="phone">Número de telefone:</label> 
+<input type="tel" name="code" name="code" placeholder="code">
+<input type="tel" name="telefone" id="telefone"> <br>
+<label for="email">E-mail:</label>
+<input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+</fieldset> 
+
+<fieldset> 
+<legend>Morada</legend>
+<label for="Endereço">Morada:</label> 
+<input type="text" name="Endereço" id="Endereço">
+<label for="codp"> Codigo Postal:</label>
+<input type="text" name="code" id="code">
+<input type="text" name="codp" id="codp">
+<label for="cidade">Cidade:</label>
+<input type="text" name="cidade" id="cidade">
+<label for="País"> País:</label>
+<input type="">
+</fieldset>
+
+<fieldset>
+<legend>Formação Académica</legend>
+<label for="formação"></label>
+<select name="formação" id="formação"> 
+<option selected>Selecione uma opção</option>
+<option value="12ano">12º ano (ensino secundário)</option>
+<option value="tec">Curso Tecnológico/profissional</option>
+<option value="Bach">Bacharelato</option>
+<option value="Licen">Licenciatura</option>
+<option value="pgrad">Pós-graduação</option>
+<option value="Mest">Mestrado </option>
+<option value="Dout">Doutorado </option>
+<option value="out">Outros</option>
+</select>
+</fieldset>
+
+<fieldset>
+<legend>Habilidades e qualificações</legend>
+<label for="comunicação">Boa comunicação</label>
+<input type="checkbox" name="habilidade1" id="comunicação" value="comunicação"><br>
+<label for="equipa">Trabalho em equipa</label>
+<input type="checkbox" name="habilidade2" id="eqp" value="equipa"> <br>
+<label for="organização">Organização</label> 
+<input type="checkbox" name="habilidade3" id="org" value="organização"><br>
+<label for="proatividade">Proatividade</label>
+<input type="checkbox" name="habilidade4" id="proativ" value="proatividade"> <br>
+<label for="determinação">Determinação</label>
+<input type="checkbox" name="habilidade5" id="det" value="habilidade"><br>
+<label for="facilidadedeaprendizado">Facilidade de Aprendizado</label>
+<input type="checkbox" name="habilidade6" id="facil" value="facilidadedeaprendizado"><br>
+<label for="atendimentoaocliente">Atendimento ao cliente</label>
+<input type="checkbox" name="habilidade7" id="atend" value="atendimentoaocliente"><br>
+<label for="interpessoal">Relacionamento interpessoal</label>
+<input type="checkbox" name="habilidade8" id="interpessoal">
+</fieldset>
+
+<fieldset>
+<legend>Fale um pouco sobre você</legend>
+<label for="sobre"></label>
+<textarea id="sobre" name="sobre"></textarea><br>
+<button type="submit">Enviar</button>
+</fieldset>
+
+</form>
+
+</body>
+</html>
